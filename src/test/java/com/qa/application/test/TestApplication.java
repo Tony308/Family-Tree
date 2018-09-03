@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class TestApplication {
 
@@ -32,40 +32,43 @@ public class TestApplication {
 
     @Test
     public void testFemale() {
-        assertEquals(true, fam.female("Susan"));
+        fam.male("Susan");
+        assertEquals(false, fam.female("Susan"));
     }
 
     @Test
-    @Ignore
+    public void testCheckMale() {
 
-    public void testMaleMethod() {
-        assertEquals(true, fam.isMale("John"));
+        fam.male("John");
+        assertTrue(fam.isMale("John"));
+        fam.female("Susan");
+        assertFalse(fam.isMale("Susan"));
     }
 
     @Test
-    @Ignore
-    public void testFemaleMethod() {
-        assertEquals(false, fam.isFemale("John"));
+    public void testCheckFemale() {
+        fam.female("John");
+        assertEquals(true, fam.isFemale("John"));
+        fam.male("Susan");
+        assertEquals(false, fam.isFemale("Susan"));
     }
 
-/*
     @Test
     @Ignore
     public void testSetParent() {
-        assertEquals(true, setParentOf("Susan", "John"));
-        assertEquals(true, setParent("John", "Susan"));
+        assertEquals(true, fam.setParentOf("Susan", "John"));
+        assertEquals(false, fam.setParentOf("John", "Susan"));
     }
 
-    @Test
-    @Ignore
-
-    public void testGetParents() {
-        assertEquals("John", getParents("Susan"));
-    }
-
-    @Test
-    @Ignore
-    public void testGetChildren(){
-        assertEquals("Susan", getChildren("John"));
-    }*/
+//    @Test
+//    @Ignore
+//    public void testGetParents() {
+//        assertEquals("John", fam.getParents("Susan"));
+//    }
+//
+//    @Test
+//    @Ignore
+//    public void testGetChildren(){
+//        assertEquals("Susan", getChildren("John"));
+//    }
 }

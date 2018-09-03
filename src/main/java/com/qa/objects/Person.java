@@ -2,12 +2,16 @@ package com.qa.objects;
 
 import com.qa.enums.Gender;
 
+import java.util.ArrayList;
+
 public class Person {
 
     private String name;
     private Gender gender;
-    private String parent;
-    private String child;
+    private ArrayList<Person> parents;
+    private Person mother;
+    private Person father;
+    private Person child;
 
     public Person(String name) {
         this.name = name;
@@ -15,6 +19,13 @@ public class Person {
 
     public String getName() {
         return name;
+    }
+    public void addParent(Person parent) {
+        this.parents.add(parent);
+    }
+
+    public ArrayList getParents() {
+        return this.parents;
     }
 
     public void setName(String name) {
@@ -29,19 +40,27 @@ public class Person {
         this.gender = gender;
     }
 
-    public String getParent() {
-        return parent;
+    public Person getMother() {
+        return mother;
     }
 
-    public void setParent(String parent) {
-        this.parent = parent;
+    public void setMother(Person mother) {
+        this.mother = mother;
     }
 
-    public String getChild() {
+    public Person getFather() {
+        return father;
+    }
+
+    public void setFather(Person father) {
+        this.father = father;
+    }
+
+    public Person getChild() {
         return child;
     }
 
-    public void setChild(String child) {
+    public void setChild(Person child) {
         this.child = child;
     }
 }
