@@ -9,12 +9,15 @@ public class Person {
     private String name;
     private Gender gender;
     private ArrayList<Person> parents;
+    private ArrayList<String> children;
     private Person mother;
     private Person father;
     private Person child;
 
-    public Person(String name) {
+    Person(String name) {
         this.name = name;
+        parents = new ArrayList();
+        children = new ArrayList();
     }
 
     public String getName() {
@@ -24,8 +27,16 @@ public class Person {
         this.parents.add(parent);
     }
 
-    public ArrayList getParents() {
-        return this.parents;
+    public ArrayList<Person> getParents() {
+        return parents;
+    }
+
+    public ArrayList getChildren() {
+        return children;
+    }
+
+    public void setChildren(ArrayList children) {
+        this.children = children;
     }
 
     public void setName(String name) {
@@ -36,7 +47,7 @@ public class Person {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    void setGender(Gender gender) {
         this.gender = gender;
     }
 

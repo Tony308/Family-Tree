@@ -2,6 +2,7 @@ package com.qa.objects;
 
 import com.qa.enums.Gender;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,19 +14,20 @@ public class Family {
         family = new HashMap<>();
     }
 
+    public Person getPerson(String name){
+        return family.get(name);
+    }
+
+
     public boolean male(String name) {
 
-        if (family.get(name) == null) {
-            System.out.println("Person doesn't exist.");
-            Person freshMember = new Person(name);
-            freshMember.setGender(Gender.MALE);
-            family.put(name, freshMember);
+        if (getPerson(name) == null) {
+            createFreshMember(name, Gender.MALE);
             return true;
-
-        } else if (family.get(name).getGender().equals(Gender.FEMALE)) {
+        } else if (getPerson(name).getGender().equals(Gender.FEMALE)) {
             return false;
         } else {
-            family.get(name).setGender(Gender.MALE);
+            getPerson(name).setGender(Gender.MALE);
             return true;
         }
 
@@ -33,58 +35,68 @@ public class Family {
 
     public boolean female(String name) {
 
-        if (family.get(name) == null) {
-            System.out.println("Person doesn't exist.");
-            Person freshMember = new Person(name);
-            freshMember.setGender(Gender.FEMALE);
-            family.put(name, freshMember);
-
+        if (getPerson(name) == null) {
+            createFreshMember(name, Gender.FEMALE);
             return true;
-
-        } else if (family.get(name).getGender().equals(Gender.MALE)) {
+        }
+        if (getPerson(name).getGender().equals(Gender.MALE)) {
             return false;
         } else {
-            family.get(name).setGender(Gender.FEMALE);
+            getPerson(name).setGender(Gender.FEMALE);
             return true;
         }
 
     }
 
     public boolean isMale(String name) {
-        if (family.get(name) == null) {
-            createFreshMemeber(name);
+        if (getPerson(name) == null) {
+            createFreshMember(name);
         }
-        return (family.get(name).getGender().equals(Gender.MALE));
+        return (getPerson(name).getGender().equals(Gender.MALE));
     }
 
     public boolean isFemale(String name) {
-        if (family.get(name) == null) {
-            createFreshMemeber(name);
+        if (getPerson(name) == null) {
+            createFreshMember(name);
         }
-        return family.get(name).getGender().equals(Gender.FEMALE);
+        return getPerson(name).getGender().equals(Gender.FEMALE);
     }
 
-    public void createFreshMemeber(String name) {
+    private void createFreshMember(String name) {
+            Person freshMember = new Person(name);
+            family.put(name, freshMember);
+    }
+
+    private void createFreshMember(String name, Gender gender) {
         Person freshMember = new Person(name);
+        freshMember.setGender(gender);
         family.put(name, freshMember);
     }
+    public boolean setParentOf(String childName, String parentName) {
+        if (getPerson(childName) == null){
+            createFreshMember(childName);
+        }
+        if (getPerson(parentName) == null) {
+            createFreshMember(childName);
+        }
 
-    public boolean setParentOf(String child, String parent) {
-        if (family.get(child) == null){
-            createFreshMemeber(child);
-        }
-        if (family.get(parent) == null) {
-            createFreshMemeber(child);
+
+        int parentsListSize;
+        parentsListSize = getPerson(childName).getParents().size();
+        boolean parentGender = getPerson(parentName).getGender().equals(Gender.MALE);
+
+
+        if (parentsListSize < 2 && parentGender) {
+            getPerson(childName).setFather(getPerson(parentName));
+            System.out.println(getPerson(childName).getFather().getName());
+            getPerson(childName).addParent(getPerson(childName).getFather());
+            return true;
+        } else if (parentsListSize < 2 && getPerson(parentName).getGender().equals(Gender.FEMALE)) {
+            getPerson(childName).setFather(getPerson(parentName));
+            getPerson(childName).addParent(getPerson(parentName));
+            return true;
         }
 
-        if (family.get(child).getParents().size() == 0 && family.get(parent).getGender() == Gender.MALE) {
-            family.get(child).setFather(family.get(parent));
-            family.get(child).addParent(family.get(child).getFather());
-            return true;
-        } else if (family.get(child).getParents().size() > 0 && family.get(child).getParents().size() < 2) {
-            family.get(child).addParent(family.get(parent));
-            return true;
-        }
         return false;
     }
 

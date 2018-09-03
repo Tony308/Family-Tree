@@ -40,6 +40,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FamilyTree$TestApplication.ic" NAME="TestApplication Coverage Results" MODIFIED="1536003169727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.application.test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -58,30 +66,31 @@
     <session id="699067134">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5445" />
+          <entry key="java" value="7803" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5445" />
+          <entry key="JAVA" value="7803" />
           <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -91,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="300">
+              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
@@ -105,12 +114,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="81" column="34" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+            <state relative-caret-position="1649">
+              <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#170#171#0" expanded="true" />
                 <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,17 +130,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
                 <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
                 <element signature="e#362#363#0" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
@@ -163,6 +177,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>create</find>
+      <find>family.get(name)</find>
+      <find>family.get(</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>getPerson(name)</replace>
+      <replace>getPerson(</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -172,9 +197,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Family.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Gender.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java" />
       </list>
     </option>
   </component>
@@ -298,7 +324,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535995513315" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536005563535" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -315,7 +341,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestApplication">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.main" />
+      <module name="FamilyTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestApplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FamilyTree" />
       <extension name="coverage">
@@ -330,9 +369,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestApplication.testSetParent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FamilyTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.application.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.application.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.application.test.TestApplication" />
+      <option name="METHOD_NAME" value="testSetParent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestApplication" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.TestApplication.testSetParent" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestApplication" />
+        <item itemvalue="JUnit.TestApplication.testSetParent" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -346,44 +408,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535980006128</updated>
-      <workItem from="1535980007733" duration="10095000" />
+      <workItem from="1535980007733" duration="16872000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestApplication - 2018.09.03 at 16h 29m 44s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 54m 44s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 29m 52s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 54m 53s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 30m 18s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 56m 23s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 37m 40s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 56m 26s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 37m 48s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 57m 20s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 38m 03s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 59m 28s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 50m 06s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 20h 59m 53s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 50m 28s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 21h 02m 38s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 50m 37s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 21h 06m 38s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 16h 51m 16s.xml">
+    <history-entry file="TestApplication - 2018.09.03 at 21h 12m 40s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10095000" />
+    <option name="totallyTimeSpent" value="16872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -399,7 +461,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
@@ -409,6 +471,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -444,19 +507,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="460" column="19" selection-start-line="460" selection-start-column="19" selection-end-line="460" selection-end-column="19" />
+          <folding>
+            <element signature="e#10361#10362#0" expanded="true" />
+            <element signature="e#10388#10389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
             <element signature="e#362#363#0" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
@@ -481,20 +568,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="81" column="34" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+        <state relative-caret-position="1649">
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#170#171#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        <state relative-caret-position="300">
+          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />

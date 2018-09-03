@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -54,16 +53,17 @@ public class TestApplication {
     }
 
     @Test
-    @Ignore
     public void testSetParent() {
-        assertEquals(true, fam.setParentOf("Susan", "John"));
-        assertEquals(false, fam.setParentOf("John", "Susan"));
+        fam.female("Susan");
+        fam.male("John");
+        assertTrue(fam.setParentOf("Susan", "John"));
+        assertFalse( fam.setParentOf("John", "Susan"));
     }
 
 //    @Test
 //    @Ignore
 //    public void testGetParents() {
-//        assertEquals("John", fam.getParents("Susan"));
+//        assertEquals(false, fam);
 //    }
 //
 //    @Test
