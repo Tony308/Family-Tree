@@ -3,11 +3,8 @@ package com.qa.application.test;
 import com.qa.objects.Family;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
-
-import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
@@ -74,10 +71,17 @@ public class TestApplication {
         assertTrue(fam.getParents("Susan").contains(fam.getPerson("Mother")));
 
     }
-//
-//    @Test
-//    @Ignore
-//    public void testGetChildren(){
-//        assertEquals("Susan", getChildren("John"));
-//    }
+
+    @Test
+    public void testGetChildren(){
+        fam.female("Susan");
+        fam.male("Father");
+        fam.female("Mother");
+        assertTrue(fam.setParentOf("Susan", "Father"));
+        assertTrue(fam.setParentOf("Susan", "Mother"));
+
+        assertTrue(fam.getChildrenOf("Father").contains(fam.getPerson("Susan")));
+        assertTrue(fam.getChildrenOf("Mother").contains(fam.getPerson("Susan")));
+
+    }
 }

@@ -26,9 +26,8 @@
       <change beforePath="$PROJECT_DIR$/../DemoQA/target/classes/Constant.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DemoQA/target/classes/Droppable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DemoQA/target/classes/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PassionateTea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PassionateTea/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -73,13 +72,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8652" />
+          <entry key="java" value="9252" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8652" />
+          <entry key="JAVA" value="9252" />
           <entry key="XML" value="34" />
         </counts>
       </usages-collector>
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,12 +111,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="90" column="24" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="24" />
+            <state relative-caret-position="266">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2914#2915#0" expanded="true" />
                 <element signature="e#2959#2960#0" expanded="true" />
+                <element signature="e#3016#3017#0" expanded="true" />
+                <element signature="e#3069#3070#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,14 +127,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="304">
+              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#561#562#0" expanded="true" />
                 <element signature="e#601#602#0" expanded="true" />
                 <element signature="e#662#663#0" expanded="true" />
                 <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,6 +163,7 @@
       <find>family.get(</find>
       <find>getParents</find>
       <find>System.out</find>
+      <find>setChi</find>
     </findStrings>
     <replaceStrings>
       <replace>getPerson(name)</replace>
@@ -299,7 +307,7 @@
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536142732229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536144101849" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -384,20 +392,11 @@
       <option name="presentableId" value="Default" />
       <updated>1535980006128</updated>
       <workItem from="1535980007733" duration="16872000" />
-      <workItem from="1536140140002" duration="2587000" />
+      <workItem from="1536140140002" duration="3956000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestApplication - 2018.09.03 at 20h 59m 53s.xml">
-      <configuration name="TestApplication" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 21h 02m 38s.xml">
-      <configuration name="TestApplication" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestApplication - 2018.09.03 at 21h 06m 38s.xml">
-      <configuration name="TestApplication" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestApplication - 2018.09.03 at 21h 12m 40s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
@@ -419,9 +418,18 @@
     <history-entry file="TestApplication - 2018.09.05 at 11h 17m 37s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestApplication - 2018.09.05 at 11h 40m 30s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.09.05 at 11h 41m 25s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.09.05 at 11h 41m 40s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19459000" />
+    <option name="totallyTimeSpent" value="20828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,14 +453,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -506,34 +514,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="304">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#561#562#0" expanded="true" />
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#662#663#0" expanded="true" />
             <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="24" />
+        <state relative-caret-position="266">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2914#2915#0" expanded="true" />
             <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

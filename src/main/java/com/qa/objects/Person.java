@@ -9,7 +9,7 @@ public class Person {
     private String name;
     private Gender gender;
     private ArrayList<Person> parents;
-    private ArrayList<String> children;
+    private ArrayList<Person> children;
     private Person mother;
     private Person father;
     private Person child;
@@ -35,8 +35,8 @@ public class Person {
         return children;
     }
 
-    public void setChildren(ArrayList children) {
-        this.children = children;
+    public void addChildren(Person child) {
+        this.children.add(child);
     }
 
     public void setName(String name) {

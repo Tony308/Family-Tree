@@ -73,40 +73,48 @@ public class Family {
         family.put(name, freshMember);
     }
     public boolean setParentOf(String childName, String parentName) {
-        if (getPerson(childName) == null){
-            createFreshMember(childName);
-        }
-        if (getPerson(parentName) == null) {
-            createFreshMember(childName);
-        }
+        boolean childExists = getPerson(childName) == null;
+        boolean parentExists = getPerson(parentName) == null;
 
+        if (childExists){
+            createFreshMember(childName);
+        }
+        if (parentExists) {
+            createFreshMember(childName);
+        }
 
         int parentsListSize;
         parentsListSize = getPerson(childName).getParents().size();
-        boolean parentGender = getPerson(parentName).getGender().equals(Gender.MALE);
+        boolean parentIsMale = getPerson(parentName).getGender().equals(Gender.MALE);
+        boolean parentIsFemale = getPerson(parentName).getGender().equals(Gender.FEMALE);
 
-
-        if (parentsListSize < 2 && parentGender) {
+        if (parentsListSize < 2 && parentIsMale) {
+            //sets father
             getPerson(childName).setFather(getPerson(parentName));
-//            System.out.println(getPerson(childName).getFather().getName());
+            //Add children
+            getPerson(parentName).addChildren(getPerson(childName));
+            //Adds
             getPerson(childName).addParent(getPerson(childName).getFather());
             return true;
-        } else if (parentsListSize < 2 && getPerson(parentName).getGender().equals(Gender.FEMALE)) {
-            getPerson(childName).setFather(getPerson(parentName));
+        } else if (parentsListSize < 2 && parentIsFemale ) {
+            //setMother
+            getPerson(childName).setMother(getPerson(parentName));
+            //Add children
+            getPerson(parentName).addChildren(getPerson(childName));
+
             getPerson(childName).addParent(getPerson(parentName));
             return true;
         }
-
         return false;
     }
 
     public ArrayList getParents(String name){
         return family.get(name).getParents();
     }
-//
-//    public Array getChildren(String name){
-//
-//    }
+
+    public ArrayList getChildrenOf(String name){
+        return family.get(name).getChildren();
+    }
 
 
 }
