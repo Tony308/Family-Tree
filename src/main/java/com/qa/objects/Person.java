@@ -10,40 +10,38 @@ public class Person {
     private Gender gender;
     private ArrayList<Person> parents;
     private ArrayList<Person> children;
-    private Person mother;
-    private Person father;
     private Person child;
 
     Person(String name) {
         this.name = name;
-        parents = new ArrayList();
-        children = new ArrayList();
+        parents = new ArrayList<>();
+        children = new ArrayList<>();
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
-    public void addParent(Person parent) {
+    void addParent(Person parent) {
         this.parents.add(parent);
     }
 
-    public ArrayList<Person> getParents() {
+    ArrayList<Person> getParents() {
         return parents;
     }
 
-    public ArrayList getChildren() {
+    ArrayList getChildren() {
         return children;
     }
 
-    public void addChildren(Person child) {
+    void addChildren(Person child) {
         this.children.add(child);
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public Gender getGender() {
+    Gender getGender() {
         return gender;
     }
 
@@ -51,21 +49,6 @@ public class Person {
         this.gender = gender;
     }
 
-    public Person getMother() {
-        return mother;
-    }
-
-    public void setMother(Person mother) {
-        this.mother = mother;
-    }
-
-    public Person getFather() {
-        return father;
-    }
-
-    public void setFather(Person father) {
-        this.father = father;
-    }
 
     public Person getChild() {
         return child;

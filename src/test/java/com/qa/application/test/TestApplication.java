@@ -24,14 +24,18 @@ public class TestApplication {
 
     @Test
     public void testMale() {
+        assertTrue(fam.male("John"));
+
         fam.female("Susan");
-        assertEquals(false, fam.male("Susan"));
+
+        assertFalse(fam.male("Susan"));
     }
 
     @Test
     public void testFemale() {
+        assertTrue(fam.female("John"));
         fam.male("Susan");
-        assertEquals(false, fam.female("Susan"));
+        assertFalse(fam.female("Susan"));
     }
 
     @Test
@@ -46,9 +50,10 @@ public class TestApplication {
     @Test
     public void testCheckFemale() {
         fam.female("John");
-        assertEquals(true, fam.isFemale("John"));
+        assertTrue(fam.isFemale("John"));
         fam.male("Susan");
-        assertEquals(false, fam.isFemale("Susan"));
+        assertFalse(fam.isFemale("Susan"));
+
     }
 
     @Test
@@ -56,9 +61,14 @@ public class TestApplication {
         fam.female("Susan");
         fam.male("John");
         assertTrue(fam.setParentOf("Susan", "John"));
-        //UNABLE PREVENT ANCESTRY
-//        assertFalse( fam.setParentOf("John", "Susan"));
     }
+    @Test
+    public void testParentConflict() {
+        assertTrue(fam.setParentOf("Susan", "John"));
+        //UNABLE PREVENT ANCESTRY
+        assertEquals(false, fam.setParentOf("John", "Susan"));
+    }
+
 
     @Test
     public void testGetParents() {
@@ -81,7 +91,7 @@ public class TestApplication {
         assertTrue(fam.setParentOf("Susan", "Mother"));
 
         assertTrue(fam.getChildrenOf("Father").contains(fam.getPerson("Susan")));
-        assertTrue(fam.getChildrenOf("Mother").contains(fam.getPerson("Susan")));
+        assertEquals(true, fam.getChildrenOf("Mother").contains(fam.getPerson("Susan")));
 
     }
 }

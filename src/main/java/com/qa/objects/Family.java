@@ -52,14 +52,16 @@ public class Family {
         if (getPerson(name) == null) {
             createFreshMember(name);
         }
-        return (getPerson(name).getGender().equals(Gender.MALE));
+
+        return getPerson(name).getGender() == null;
     }
 
     public boolean isFemale(String name) {
         if (getPerson(name) == null) {
             createFreshMember(name);
         }
-        return getPerson(name).getGender().equals(Gender.FEMALE);
+
+        return getPerson(name).getGender() == null;
     }
 
     private void createFreshMember(String name) {
@@ -83,26 +85,41 @@ public class Family {
             createFreshMember(childName);
         }
 
+        boolean parentIsMale = isMale(parentName);
+        boolean parentIsFemale = isFemale(parentName);
         int parentsListSize;
         parentsListSize = getPerson(childName).getParents().size();
-        boolean parentIsMale = getPerson(parentName).getGender().equals(Gender.MALE);
-        boolean parentIsFemale = getPerson(parentName).getGender().equals(Gender.FEMALE);
+
+//        for (int x = 0; x < getPerson(parentName).getChildren().size();x ++) {
+//            if (getPerson(parentName).getChildren().get(x).equals(getPerson(parentName))) {
+//                return false;
+//            } else if (getPerson(childName).getParents().get(x).equals(getPerson(childName))) {
+//                return false;
+//            }
+//        }
+
+        if (parentsListSize == 1 && isFemale(getPerson(childName).getParents().get(0).getName())) {
+            getPerson(parentName).setGender(Gender.MALE);
+            getPerson(childName).addParent(getPerson(parentName));
+            getPerson(parentName).addChildren(getPerson(childName));
+            return true;
+        }
+
+        if (parentsListSize == 1 && isMale(getPerson(childName).getParents().get(0).getName())) {
+            getPerson(parentName).setGender(Gender.FEMALE);
+            getPerson(childName).addParent(getPerson(parentName));
+            getPerson(parentName).addChildren(getPerson(childName));
+            return true;
+        }
+
 
         if (parentsListSize < 2 && parentIsMale) {
-            //sets father
-            getPerson(childName).setFather(getPerson(parentName));
-            //Add children
+            getPerson(childName).addParent(getPerson(parentName));
             getPerson(parentName).addChildren(getPerson(childName));
-            //Adds
-            getPerson(childName).addParent(getPerson(childName).getFather());
             return true;
         } else if (parentsListSize < 2 && parentIsFemale ) {
-            //setMother
-            getPerson(childName).setMother(getPerson(parentName));
-            //Add children
-            getPerson(parentName).addChildren(getPerson(childName));
-
             getPerson(childName).addParent(getPerson(parentName));
+            getPerson(parentName).addChildren(getPerson(childName));
             return true;
         }
         return false;
