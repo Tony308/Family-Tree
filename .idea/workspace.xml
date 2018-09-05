@@ -41,12 +41,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FamilyTree$TestApplication.ic" NAME="TestApplication Coverage Results" MODIFIED="1536003169727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/FamilyTree$TestApplication.ic" NAME="TestApplication Coverage Results" MODIFIED="1536166732453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.qa.application.test.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="209" />
+    <option name="myElementSize" value="215" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -73,25 +73,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13204" />
+          <entry key="java" value="15995" />
           <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13204" />
+          <entry key="JAVA" value="15995" />
           <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
           <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="2" />
           <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
@@ -99,11 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+            <state relative-caret-position="-442">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,19 +111,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="125" column="19" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+            <state relative-caret-position="221">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
                 <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#4019#4020#0" expanded="true" />
-                <element signature="e#4071#4072#0" expanded="true" />
-                <element signature="e#4094#4095#0" expanded="true" />
-                <element signature="e#4147#4148#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="55">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#476#477#0" expanded="true" />
@@ -142,6 +140,8 @@
                 <element signature="e#601#602#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
                 <element signature="e#1142#1143#0" expanded="true" />
                 <element signature="e#1182#1183#0" expanded="true" />
                 <element signature="e#1215#1216#0" expanded="true" />
@@ -150,10 +150,6 @@
                 <element signature="e#1484#1485#0" expanded="true" />
                 <element signature="e#1339#1340#0" expanded="true" />
                 <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>create</find>
       <find>family.get(name)</find>
       <find>family.get(</find>
       <find>getParents</find>
@@ -183,6 +178,9 @@
       <find>System</find>
       <find>getName</find>
       <find>get</find>
+      <find>create</find>
+      <find>getChild</find>
+      <find>== null</find>
     </findStrings>
     <replaceStrings>
       <replace>getPerson(name)</replace>
@@ -200,8 +198,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Gender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java" />
       </list>
     </option>
   </component>
@@ -326,7 +324,7 @@
     <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536153247884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536166912131" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -358,6 +356,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestApplication.testDuplicateName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FamilyTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.application.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.application.test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.application.test.TestApplication" />
+      <option name="METHOD_NAME" value="testDuplicateName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestApplication.testGetChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FamilyTree" />
       <extension name="coverage">
@@ -369,22 +383,6 @@
       <option name="PACKAGE_NAME" value="com.qa.application.test" />
       <option name="MAIN_CLASS_NAME" value="com.qa.application.test.TestApplication" />
       <option name="METHOD_NAME" value="testGetChildren" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestApplication.testGetParents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FamilyTree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.application.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.application.test" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.application.test.TestApplication" />
-      <option name="METHOD_NAME" value="testGetParents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -424,18 +422,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestApplication" />
+      <item itemvalue="JUnit.TestApplication.testParentConflict" />
+      <item itemvalue="JUnit.TestApplication.testDuplicateName" />
       <item itemvalue="JUnit.TestApplication.testSetParent" />
       <item itemvalue="JUnit.TestApplication.testGetChildren" />
-      <item itemvalue="JUnit.TestApplication.testParentConflict" />
-      <item itemvalue="JUnit.TestApplication.testGetParents" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestApplication" />
-        <item itemvalue="JUnit.TestApplication.testGetParents" />
         <item itemvalue="JUnit.TestApplication.testGetChildren" />
-        <item itemvalue="JUnit.TestApplication.testParentConflict" />
         <item itemvalue="JUnit.TestApplication.testSetParent" />
+        <item itemvalue="JUnit.TestApplication.testParentConflict" />
+        <item itemvalue="JUnit.TestApplication.testDuplicateName" />
       </list>
     </recent_temporary>
   </component>
@@ -450,44 +448,44 @@
       <option name="presentableId" value="Default" />
       <updated>1535980006128</updated>
       <workItem from="1535980007733" duration="16872000" />
-      <workItem from="1536140140002" duration="12790000" />
+      <workItem from="1536140140002" duration="22557000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 13h 47m 52s.xml">
-      <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
+    <history-entry file="TestApplication_testDuplicateName - 2018.09.05 at 17h 51m 41s.xml">
+      <configuration name="TestApplication.testDuplicateName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 13h 47m 55s.xml">
-      <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestApplication - 2018.09.05 at 13h 49m 11s.xml">
+    <history-entry file="TestApplication - 2018.09.05 at 17h 52m 51s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.05 at 13h 49m 29s.xml">
+    <history-entry file="TestApplication - 2018.09.05 at 17h 54m 29s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication - 2018.09.05 at 14h 00m 07s.xml">
+    <history-entry file="TestApplication - 2018.09.05 at 17h 54m 43s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 14h 00m 14s.xml">
+    <history-entry file="TestApplication - 2018.09.05 at 17h 54m 45s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication_testParentConflict - 2018.09.05 at 17h 57m 06s.xml">
+      <configuration name="TestApplication.testParentConflict" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication_testSetParent - 2018.09.05 at 17h 57m 37s.xml">
+      <configuration name="TestApplication.testSetParent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 17h 58m 40s.xml">
       <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 14h 00m 46s.xml">
+    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 17h 58m 44s.xml">
       <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 14h 01m 01s.xml">
-      <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestApplication_testGetChildren - 2018.09.05 at 14h 01m 10s.xml">
-      <configuration name="TestApplication.testGetChildren" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestApplication - 2018.09.05 at 14h 01m 35s.xml">
+    <history-entry file="TestApplication - 2018.09.05 at 17h 59m 06s.xml">
       <configuration name="TestApplication" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29662000" />
+    <option name="totallyTimeSpent" value="39429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,7 +509,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -520,7 +518,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -570,39 +568,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>createFreshMember(name, Gender.MALE);
+                return true;
+            } else if (getPerson(name).getName().equals(name)) {
+
+            } else if (getPerson(name).getGender().equals(Gender.FEMALE)) {
+                return false;
+            }
+        } catch (NullPointerException e) {
+            System.out.println(e);
+            return false;
+        }
+        getPerson(name).setGender(Gender.MALE);
+        return true;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -634,14 +623,14 @@
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
-          <caret line="246" column="12" selection-start-line="246" selection-start-column="12" selection-end-line="246" selection-end-column="12" />
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="55">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#476#477#0" expanded="true" />
@@ -650,6 +639,8 @@
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
             <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
             <element signature="e#1182#1183#0" expanded="true" />
             <element signature="e#1215#1216#0" expanded="true" />
@@ -658,36 +649,30 @@
             <element signature="e#1484#1485#0" expanded="true" />
             <element signature="e#1339#1340#0" expanded="true" />
             <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="125" column="19" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#4019#4020#0" expanded="true" />
-            <element signature="e#4071#4072#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/application/test/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+        <state relative-caret-position="-442">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/objects/Family.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
           </folding>
         </state>
       </provider>

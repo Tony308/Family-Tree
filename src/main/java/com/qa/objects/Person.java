@@ -3,7 +3,6 @@ package com.qa.objects;
 import com.qa.enums.Gender;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Person {
 
@@ -11,7 +10,6 @@ public class Person {
     private Gender gender;
     private ArrayList<Person> parents;
     private ArrayList<Person> children;
-    private Person child;
 
     Person(String name) {
         this.name = name;
@@ -26,33 +24,12 @@ public class Person {
         this.parents.add(parent);
     }
 
-    ArrayList<Person> getParentsList() {
+    ArrayList<Person> getParents() {
         return parents;
     }
 
-    String[] getParents() {
-
-        String[] names = new String[parents.size()];
-        int counter = 0;
-
-        for (Person temp : parents) {
-            names[counter] = temp.getName();
-            counter++;
-        }
-        Arrays.sort(names);
-        return names;
-    }
-
-    String[] getChildren() {
-        String[] names = new String[children.size()];
-        int counter = 0;
-        for (Person temp : children) {
-            names[counter] = temp.getName();
-            System.out.println(temp.getName());
-            counter++;
-        }
-        Arrays.sort(names);
-        return names;
+    public ArrayList<Person> getChildren() {
+        return children;
     }
 
     void addChildren(Person child) {
@@ -69,14 +46,5 @@ public class Person {
 
     void setGender(Gender gender) {
         this.gender = gender;
-    }
-
-
-    public Person getChild() {
-        return child;
-    }
-
-    public void setChild(Person child) {
-        this.child = child;
     }
 }
