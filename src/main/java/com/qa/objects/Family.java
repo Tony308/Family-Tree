@@ -52,16 +52,14 @@ public class Family {
         if (getPerson(name) == null) {
             createFreshMember(name);
         }
-
-        return getPerson(name).getGender() == null;
+        return getPerson(name).getGender() == null || (getPerson(name).getGender().equals(Gender.MALE));
     }
 
     public boolean isFemale(String name) {
         if (getPerson(name) == null) {
             createFreshMember(name);
         }
-
-        return getPerson(name).getGender() == null;
+        return getPerson(name).getGender() == null || (getPerson(name).getGender().equals(Gender.FEMALE));
     }
 
     private void createFreshMember(String name) {
@@ -90,13 +88,13 @@ public class Family {
         int parentsListSize;
         parentsListSize = getPerson(childName).getParents().size();
 
-//        for (int x = 0; x < getPerson(parentName).getChildren().size();x ++) {
-//            if (getPerson(parentName).getChildren().get(x).equals(getPerson(parentName))) {
-//                return false;
-//            } else if (getPerson(childName).getParents().get(x).equals(getPerson(childName))) {
-//                return false;
-//            }
-//        }
+        for (int x = 0; x < getPerson(parentName).getChildren().size();x++) {
+            if (getPerson(parentName).getChildren().get(x).equals(getPerson(parentName))) {
+                return false;
+            } else if (getPerson(childName).getParents().get(x).equals(getPerson(childName))) {
+                return false;
+            }
+        }
 
         if (parentsListSize == 1 && isFemale(getPerson(childName).getParents().get(0).getName())) {
             getPerson(parentName).setGender(Gender.MALE);

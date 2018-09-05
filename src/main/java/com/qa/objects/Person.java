@@ -3,6 +3,7 @@ package com.qa.objects;
 import com.qa.enums.Gender;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Person {
 
@@ -30,6 +31,14 @@ public class Person {
     }
 
     ArrayList getChildren() {
+        String[] names = new String[children.size()];
+        int counter = 0;
+        for (Person temp : children) {
+            names[counter] = temp.getName();
+            counter++;
+        }
+        Arrays.sort(names);
+        System.out.println(names);
         return children;
     }
 
