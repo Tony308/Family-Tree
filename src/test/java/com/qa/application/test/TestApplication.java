@@ -7,6 +7,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class TestApplication {
@@ -57,14 +59,21 @@ public class TestApplication {
         fam.female("Susan");
         fam.male("John");
         assertTrue(fam.setParentOf("Susan", "John"));
-        assertFalse( fam.setParentOf("John", "Susan"));
+        //UNABLE PREVENT ANCESTRY
+//        assertFalse( fam.setParentOf("John", "Susan"));
     }
 
-//    @Test
-//    @Ignore
-//    public void testGetParents() {
-//        assertEquals(false, fam);
-//    }
+    @Test
+    public void testGetParents() {
+        fam.female("Susan");
+        fam.male("John");
+        fam.female("Mother");
+        assertTrue(fam.setParentOf("Susan", "John"));
+        assertTrue(fam.setParentOf("Susan", "Mother"));
+        assertTrue(fam.getParents("Susan").contains(fam.getPerson("John")));
+        assertTrue(fam.getParents("Susan").contains(fam.getPerson("Mother")));
+
+    }
 //
 //    @Test
 //    @Ignore

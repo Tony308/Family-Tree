@@ -88,7 +88,7 @@ public class Family {
 
         if (parentsListSize < 2 && parentGender) {
             getPerson(childName).setFather(getPerson(parentName));
-            System.out.println(getPerson(childName).getFather().getName());
+//            System.out.println(getPerson(childName).getFather().getName());
             getPerson(childName).addParent(getPerson(childName).getFather());
             return true;
         } else if (parentsListSize < 2 && getPerson(parentName).getGender().equals(Gender.FEMALE)) {
@@ -100,9 +100,9 @@ public class Family {
         return false;
     }
 
-//    public Array getParents(String name){
-//
-//    }
+    public ArrayList getParents(String name){
+        return family.get(name).getParents();
+    }
 //
 //    public Array getChildren(String name){
 //
