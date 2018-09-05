@@ -26,20 +26,33 @@ public class Person {
         this.parents.add(parent);
     }
 
-    ArrayList<Person> getParents() {
+    ArrayList<Person> getParentsList() {
         return parents;
     }
 
-    ArrayList getChildren() {
-        String[] names = new String[children.size()];
+    String[] getParents() {
+
+        String[] names = new String[parents.size()];
         int counter = 0;
-        for (Person temp : children) {
+
+        for (Person temp : parents) {
             names[counter] = temp.getName();
             counter++;
         }
         Arrays.sort(names);
-        System.out.println(names);
-        return children;
+        return names;
+    }
+
+    String[] getChildren() {
+        String[] names = new String[children.size()];
+        int counter = 0;
+        for (Person temp : children) {
+            names[counter] = temp.getName();
+            System.out.println(temp.getName());
+            counter++;
+        }
+        Arrays.sort(names);
+        return names;
     }
 
     void addChildren(Person child) {

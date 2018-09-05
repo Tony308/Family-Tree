@@ -86,24 +86,24 @@ public class Family {
         boolean parentIsMale = isMale(parentName);
         boolean parentIsFemale = isFemale(parentName);
         int parentsListSize;
-        parentsListSize = getPerson(childName).getParents().size();
+        parentsListSize = getPerson(childName).getParentsList().size();
 
-        for (int x = 0; x < getPerson(parentName).getChildren().size();x++) {
-            if (getPerson(parentName).getChildren().get(x).equals(getPerson(parentName))) {
-                return false;
-            } else if (getPerson(childName).getParents().get(x).equals(getPerson(childName))) {
-                return false;
-            }
-        }
+//        for (int x = 0; x < getPerson(parentName).getChildren().size();x++) {
+//            if (getPerson(parentName).getChildren().get(x).equals(getPerson(parentName))) {
+//                return false;
+//            } else if (getPerson(childName).getParentsList().get(x).equals(getPerson(childName))) {
+//                return false;
+//            }
+//        }
 
-        if (parentsListSize == 1 && isFemale(getPerson(childName).getParents().get(0).getName())) {
+        if (parentsListSize == 1 && isFemale(getPerson(childName).getParentsList().get(0).getName())) {
             getPerson(parentName).setGender(Gender.MALE);
             getPerson(childName).addParent(getPerson(parentName));
             getPerson(parentName).addChildren(getPerson(childName));
             return true;
         }
 
-        if (parentsListSize == 1 && isMale(getPerson(childName).getParents().get(0).getName())) {
+        if (parentsListSize == 1 && isMale(getPerson(childName).getParentsList().get(0).getName())) {
             getPerson(parentName).setGender(Gender.FEMALE);
             getPerson(childName).addParent(getPerson(parentName));
             getPerson(parentName).addChildren(getPerson(childName));
@@ -123,11 +123,11 @@ public class Family {
         return false;
     }
 
-    public ArrayList getParents(String name){
+    public String[] getParents(String name){
         return family.get(name).getParents();
     }
 
-    public ArrayList getChildrenOf(String name){
+    public String[] getChildrenOf(String name){
         return family.get(name).getChildren();
     }
 

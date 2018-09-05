@@ -3,6 +3,7 @@ package com.qa.application.test;
 import com.qa.objects.Family;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -75,10 +76,11 @@ public class TestApplication {
         fam.female("Susan");
         fam.male("John");
         fam.female("Mother");
+
         assertTrue(fam.setParentOf("Susan", "John"));
         assertTrue(fam.setParentOf("Susan", "Mother"));
-        assertTrue(fam.getParents("Susan").contains(fam.getPerson("John")));
-        assertTrue(fam.getParents("Susan").contains(fam.getPerson("Mother")));
+        String[] parentsNamesInOrder = {"John", "Mother"};
+        assertEquals(parentsNamesInOrder, fam.getParents("Susan"));
 
     }
 
@@ -87,11 +89,14 @@ public class TestApplication {
         fam.female("Susan");
         fam.male("Father");
         fam.female("Mother");
+        fam.male("Michael");
+
         assertEquals(true, fam.setParentOf("Susan", "Father"));
         assertTrue(fam.setParentOf("Susan", "Mother"));
+        assertTrue(fam.setParentOf("Michael", "Mother"));
+        assertTrue(fam.setParentOf("Michael", "Father"));
 
-//        assertTrue(fam.getChildrenOf("Father").contains(fam.getPerson("Susan")));
-//        assertEquals(true, fam.getChildrenOf("Mother").contains(fam.getPerson("Susan")));
-
+        String[] expected = { "Michael", "Susan"};
+        assertEquals(expected, fam.getChildrenOf("Mother"));
     }
 }
